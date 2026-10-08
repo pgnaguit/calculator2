@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #f1f5f9);
+}
+
+.App {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.Header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 25px;
+}
+
+.Calculator {
+  width: 380px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(220, 38, 38, 0.15);
+}
+
+.Display {
+  height: 70px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 12px;
+  background: #1e293b;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.Keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.Button {
+  height: 65px;
+  border: none;
+  border-radius: 10px;
+  background: #e2e8f0;
+  color: #1e293b;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.Button:hover {
+  background: #cbd5e1;
+}
+
+.Button:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  background: #f59e0b;
+  color: white;
+}
+
+.operator:hover {
+  background: #d97706;
+}
+
+.clear {
+  background: #ef4444;
+  color: white;
+}
+
+.clear:hover {
+  background: #dc2626;
+}
+
+.equal {
+  background: #22c55e;
+  color: white;
+}
+
+.equal:hover {
+  background: #16a34a;
+}
+
+.surname {
+  width: 100%;
+  grid-column: 1 / 5;
+  background: #2563eb;
+  color: white;
+}
+
+.surname:hover {
+  background: #1d4ed8;
+}
